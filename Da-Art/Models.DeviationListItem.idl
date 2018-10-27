@@ -1,0 +1,12 @@
+namespace Da_Art
+{
+    namespace Models
+    {
+        [bindable]
+        [default_interface]
+        runtimeclass DeviationListItem
+        {
+            DeviationListItem();
+        }
+    }
+}

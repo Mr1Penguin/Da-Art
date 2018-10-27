@@ -5,6 +5,7 @@
 #pragma once
 
 #include "MainPage.g.h"
+#include "Models.DeviationListItem.h" // for some reason XamlTypeInfo.g.cpp does not compiled without including model here
 
 namespace winrt::Da_Art::implementation
 {
