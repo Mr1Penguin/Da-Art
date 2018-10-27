@@ -1,48 +1,26 @@
-# Visual Studio generated .clang-format file
-
-# The style options in this file are a best effort attempt to replicate the
-# current IDE formatting configuration from Tools > Options. The following
-# style options, however, should be verified:
-# AfterClass, AfterControlStatement, AfterEnum, AfterFunction, AfterNamespace, 
-# AfterStruct, AfterUnion
-
-BasedOnStyle: LLVM
-AccessModifierOffset: -2
-AlignAfterOpenBracket: DontAlign
-AllowShortBlocksOnASingleLine: true
+---
+AlignEscapedNewlines: Left
+AlignOperands: 'true'
+AllowAllParametersOfDeclarationOnNextLine: 'true'
+AllowShortBlocksOnASingleLine: 'true'
+AllowShortCaseLabelsOnASingleLine: 'true'
 AllowShortFunctionsOnASingleLine: All
-BraceWrapping:
-  AfterClass: false    # TODO: verify
-  AfterControlStatement: false    # TODO: verify
-  AfterEnum: false    # TODO: verify
-  AfterFunction: false    # TODO: verify
-  AfterNamespace: false    # TODO: verify
-  AfterStruct: false    # TODO: verify
-  AfterUnion: false    # TODO: verify
-  BeforeCatch: true
-  BeforeElse: true
-  IndentBraces: false
-  SplitEmptyFunction: true
-  SplitEmptyRecord: true
-BreakBeforeBraces: Custom
-ColumnLimit: 0
-Cpp11BracedListStyle: false
-DerivePointerAlignment: true
-FixNamespaceComments: false
-IndentCaseLabels: false
-IndentPPDirectives: None
-IndentWidth: 2
-MaxEmptyLinesToKeep: 10
+AllowShortIfStatementsOnASingleLine: 'true'
+AllowShortLoopsOnASingleLine: 'true'
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: 'true'
+AlwaysBreakTemplateDeclarations: 'true'
+BreakBeforeBraces: Stroustrup
+ColumnLimit: '120'
+CompactNamespaces: 'false'
+ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
+Cpp11BracedListStyle: 'true'
+DerivePointerAlignment: 'true'
+IndentWidth: '2'
+Language: Cpp
 NamespaceIndentation: All
-SortIncludes: false
-SortUsingDeclarations: false
-SpaceAfterCStyleCast: false
-SpaceBeforeAssignmentOperators: true
-SpaceBeforeParens: ControlStatements
-SpaceInEmptyParentheses: false
-SpacesInCStyleCastParentheses: false
-SpacesInParentheses: false
-SpacesInSquareBrackets: false
-TabWidth: 2
-UseTab: false
-ColumnLimit: 120
+Standard: Cpp11
+UseTab: Never
+
+...
