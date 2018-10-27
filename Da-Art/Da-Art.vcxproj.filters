@@ -8,6 +8,7 @@
     <ClCompile Include="App.cpp" />
     <ClCompile Include="MainPage.cpp" />
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="Models.DeviationListItem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -19,6 +20,7 @@
     <ClInclude Include="InfinityCollection.h">
       <Filter>Models</Filter>
     </ClInclude>
+    <ClInclude Include="Models.DeviationListItem.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png" />
@@ -42,6 +44,7 @@
   <ItemGroup>
     <None Include="Da_Art_TemporaryKey.pfx" />
     <None Include="packages.config" />
+    <None Include=".clang-format" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
