@@ -19,17 +19,19 @@ namespace winrt::Da_Art::Models {
     wf::IAsyncAction ContinueLoadingAsync()
     {
       HasMoreItems(true);
+      co_await winrt::resume_background();
       LoadMoreItemsAsync(1);
     }
     wf::IAsyncOperation<wuxd::LoadMoreItemsResult> LoadMoreItemsAsync(uint32_t count)
     {
-      auto core_dispatcher = winrt::Windows::UI::Core::CoreWindow::GetForCurrentThread().Dispatcher();
-      LoadItems(count, core_dispatcher);
+      winrt::apartment_context ui_thread;
+      co_await winrt::resume_background();
+      LoadItems(count, ui_thread);
     }
 
   protected:
     void HasMoreItems(bool has_more_items) noexcept { m_has_more_items = has_more_items; }
-    virtual wf::IAsyncOperation<wuxd::LoadMoreItemsResult> LoadItems(uint32_t count, wuc::CoreDispatcher) = 0;
+    virtual wf::IAsyncOperation<wuxd::LoadMoreItemsResult> LoadItems(uint32_t count, winrt::apartment_context context) = 0;
     virtual wf::IAsyncOperation<T> AddloadingItem() = 0;
     void RemoveLoadingItem(T item, bool isError = false, winrt::hstring errorText = L"")
     {
