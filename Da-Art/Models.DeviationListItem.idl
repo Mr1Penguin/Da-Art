@@ -1,14 +1,13 @@
-namespace Da_Art {
-  namespace Models {
-    enum DeviationListItemType { Image, Journal, Loading };
+namespace Da_Art.Models
+{
+  enum DeviationListItemType { Image, Journal, Loading };
 
-    [bindable][default_interface] runtimeclass DeviationListItem
-    {
-      DeviationListItem();
-      DeviationListItemType Type;
-      String ThumbUri;
-      Double SmallThumbHeight;
-      Double MediumThumbHeight;
-    }
-  } // namespace Models
-} // namespace Da_Art
+  [bindable][default_interface] runtimeclass DeviationListItem
+  {
+    DeviationListItem();
+    DeviationListItemType Type;
+    String ThumbUri;
+    Double SmallThumbHeight;
+    Double MediumThumbHeight;
+  }
+} // namespace Da_Art.Models

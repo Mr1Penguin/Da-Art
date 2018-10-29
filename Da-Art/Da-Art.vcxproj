@@ -96,6 +96,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DeviationCollection.h" />
     <ClInclude Include="Models.DeviationListItem.h">
       <DependentUpon>Models.DeviationListItem.idl</DependentUpon>
       <SubType>Code</SubType>

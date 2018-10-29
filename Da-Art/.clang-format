@@ -12,6 +12,8 @@ AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: 'true'
 AlwaysBreakTemplateDeclarations: 'true'
 BreakBeforeBraces: Stroustrup
+BreakBeforeInheritanceComma: true
+#BreakConstructorInitializers: true //check clang-format ver in VS
 ColumnLimit: '120'
 CompactNamespaces: 'false'
 ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'

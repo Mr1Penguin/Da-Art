@@ -5,6 +5,8 @@
 
 #pragma once
 
+#define NOMINMAX //set std::min and std::max free!
+
 #include <windows.h>
 #include <unknwn.h>
 #include <restrictederrorinfo.h>

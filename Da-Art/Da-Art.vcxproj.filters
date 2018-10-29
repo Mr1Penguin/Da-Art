@@ -21,6 +21,9 @@
       <Filter>Models</Filter>
     </ClInclude>
     <ClInclude Include="Models.DeviationListItem.h" />
+    <ClInclude Include="DeviationCollection.h">
+      <Filter>Models</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png" />
