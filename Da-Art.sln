@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28218.60
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Da-Art", "Da-Art\Da-Art.vcxproj", "{16040949-315F-41C4-AC12-86CBB87F0AB0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "APICC", "apicc\APICC\APICC.vcxitems", "{E0F4F008-285D-4F2A-9601-B82A592CFFBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -44,5 +46,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CAB5362-32B4-4775-908E-A15708B5119B}
 	EndGlobalSection
 EndGlobal
