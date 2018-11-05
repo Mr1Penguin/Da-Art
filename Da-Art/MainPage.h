@@ -6,6 +6,7 @@
 
 #include "MainPage.g.h"
 #include "Models.DeviationListItem.h" // for some reason XamlTypeInfo.g.cpp does not compiled without including model here
+#include "Models.WatchItemCollection.h"
 
 namespace winrt::Da_Art::implementation
 {

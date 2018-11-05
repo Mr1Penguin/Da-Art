@@ -43,6 +43,9 @@
     <Midl Include="Models.DeviationListItem.idl">
       <Filter>Models</Filter>
     </Midl>
+    <Midl Include="Models.WatchItemCollection.idl">
+      <Filter>Models</Filter>
+    </Midl>
   </ItemGroup>
   <ItemGroup>
     <None Include="Da_Art_TemporaryKey.pfx" />

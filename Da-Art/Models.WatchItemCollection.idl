@@ -1,0 +1,14 @@
+import "Models.DeviationListItem.idl";
+
+namespace Da_Art.Models
+{
+  [bindable][default_interface] runtimeclass WatchItemCollection
+      : Windows.Foundation.Collections.IObservableVector<DeviationListItem>
+      , Windows.Foundation.Collections.IVector<DeviationListItem>
+      , Windows.Foundation.Collections.IVectorView<DeviationListItem>
+      , Windows.Foundation.Collections.IIterable<DeviationListItem>
+      , Windows.UI.Xaml.Data.ISupportIncrementalLoading
+  {
+    WatchItemCollection();
+  }
+} // namespace Da_Art.Models

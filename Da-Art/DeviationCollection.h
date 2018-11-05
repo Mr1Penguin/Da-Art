@@ -27,7 +27,7 @@ namespace winrt::Da_Art::Models {
       bool operator!=(const Thumb& other) { return !(*this == other); }
     };
 
-    wf::IAsyncOperation<DeviationListItem> AddloadingItem(winrt::apartment_context context) override
+    virtual wf::IAsyncOperation<DeviationListItem> AddloadingItem(winrt::apartment_context context) override
     {
       auto item = std::find_if(std::begin(get_container()), std::end(get_container()),
                                [](const DeviationListItem& i) { return i.Type() == DeviationListItemType::Loading; });
