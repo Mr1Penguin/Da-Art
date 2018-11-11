@@ -57,6 +57,9 @@
     <Midl Include="Models.BaseModel.idl">
       <Filter>Models</Filter>
     </Midl>
+    <Midl Include="Models.Pageable.idl">
+      <Filter>Models</Filter>
+    </Midl>
   </ItemGroup>
   <ItemGroup>
     <None Include="UwpDeviation.def" />

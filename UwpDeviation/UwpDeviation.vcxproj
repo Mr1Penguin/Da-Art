@@ -136,6 +136,10 @@
       <DependentUpon>Models.SubModels.Deviation.MotionBook.idl</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="Models.Pageable.h">
+      <DependentUpon>Models.Pageable.idl</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Class.h">
       <DependentUpon>Class.idl</DependentUpon>
@@ -164,6 +168,10 @@
     </ClCompile>
     <ClCompile Include="Models.SubModels.Deviation.MotionBook.cpp">
       <DependentUpon>Models.SubModels.Deviation.MotionBook.idl</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="Models.Pageable.cpp">
+      <DependentUpon>Models.Pageable.idl</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -196,6 +204,9 @@
     <Midl Include="Models.SubModels.Deviation.MotionBook.idl">
     </Midl>
     <Midl Include="Models.SubModels.Deviation.Thumb.idl">
+    </Midl>
+    <Midl Include="Models.Pageable.idl">
+      <SubType>Designer</SubType>
     </Midl>
   </ItemGroup>
   <ItemGroup>

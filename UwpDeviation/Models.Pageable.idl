@@ -1,0 +1,11 @@
+import "Models.BaseModel.idl";
+
+namespace UwpDeviation.Models
+{
+  [bindable][default_interface] runtimeclass Pageable : BaseModel
+  {
+    Pageable();
+    String Cursor;
+    Boolean HasMore;
+  }
+} // namespace UwpDeviation.Models
