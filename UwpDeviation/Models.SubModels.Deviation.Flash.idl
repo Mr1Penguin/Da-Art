@@ -1,0 +1,4 @@
+namespace UwpDeviation.Models.SubModels.Deviation
+{
+  [bindable][default_interface] runtimeclass Flash { Flash(); }
+} // namespace UwpDeviantart.Models.SubModels.Deviation

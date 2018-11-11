@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>accd3aa8-1ba0-4223-9bbe-0c431709210b</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{926ab91d-31b4-48c3-b9a4-e681349f27f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{f00e9d6b-f55f-43b1-90c0-95022d74efa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\SubModels">
+      <UniqueIdentifier>{796c3cd2-e73d-4bdb-9649-ae0dcdbe10df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\SubModels\Deviation">
+      <UniqueIdentifier>{e79fce7f-b2ab-45ef-a1a9-c56e5eaeb047}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Class.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Class.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Class.idl" />
+    <Midl Include="Models.Deviation.idl">
+      <Filter>Models</Filter>
+    </Midl>
+    <Midl Include="Models.SubModels.Deviation.Flash.idl">
+      <Filter>Models\SubModels\Deviation</Filter>
+    </Midl>
+    <Midl Include="Models.SubModels.Deviation.Video.idl">
+      <Filter>Models\SubModels\Deviation</Filter>
+    </Midl>
+    <Midl Include="Models.SubModels.Deviation.MotionBook.idl">
+      <Filter>Models\SubModels\Deviation</Filter>
+    </Midl>
+    <Midl Include="Models.SubModels.Deviation.Thumb.idl">
+      <Filter>Models\SubModels\Deviation</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UwpDeviation.def" />
+    <None Include="packages.config" />
+    <None Include=".clang-format" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>

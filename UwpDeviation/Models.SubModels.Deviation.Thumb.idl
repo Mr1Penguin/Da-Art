@@ -1,0 +1,10 @@
+namespace UwpDeviation.Models.SubModels.Deviation
+{
+  [bindable][default_interface] runtimeclass Thumb
+  {
+    Thumb();
+    String Src;
+    Int32 Height;
+    Int32 Width;
+  }
+} // namespace UwpDeviantart.Models.SubModels.Deviation

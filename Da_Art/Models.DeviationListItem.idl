@@ -1,0 +1,14 @@
+namespace Da_Art.Models
+{
+  enum DeviationListItemType { Image, Journal, Loading };
+
+  [bindable][default_interface] runtimeclass DeviationListItem
+  {
+    DeviationListItem();
+    DeviationListItemType Type;
+    String ThumbUri;
+    Double SmallThumbHeight;
+    Double MediumThumbHeight;
+    UwpDeviation.Models.Deviation Deviation;
+  }
+} // namespace Da_Art.Models

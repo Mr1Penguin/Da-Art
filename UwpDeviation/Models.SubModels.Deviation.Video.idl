@@ -1,0 +1,4 @@
+namespace UwpDeviation.Models.SubModels.Deviation
+{
+  [bindable][default_interface] runtimeclass Video { Video(); }
+} // namespace UwpDeviantart.Models.SubModels.Deviation

@@ -1,0 +1,13 @@
+import "Models.Deviation.idl";
+
+namespace UwpDeviation
+{
+    [default_interface]
+    runtimeclass Class
+    {
+        Class();
+        Int32 MyProperty;
+
+        UwpDeviation.Models.Deviation Stub();
+    }
+}

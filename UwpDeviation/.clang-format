@@ -1,0 +1,28 @@
+---
+AlignEscapedNewlines: Left
+AlignOperands: 'true'
+AllowAllParametersOfDeclarationOnNextLine: 'true'
+AllowShortBlocksOnASingleLine: 'true'
+AllowShortCaseLabelsOnASingleLine: 'true'
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: 'true'
+AllowShortLoopsOnASingleLine: 'true'
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: 'true'
+AlwaysBreakTemplateDeclarations: 'true'
+BreakBeforeBraces: Stroustrup
+BreakBeforeInheritanceComma: true
+#BreakConstructorInitializers: true //check clang-format ver in VS
+ColumnLimit: '120'
+CompactNamespaces: 'false'
+ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
+Cpp11BracedListStyle: 'true'
+DerivePointerAlignment: 'true'
+IndentWidth: '2'
+Language: Cpp
+NamespaceIndentation: All
+Standard: Cpp11
+UseTab: Never
+
+...
