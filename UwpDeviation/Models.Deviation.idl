@@ -3,10 +3,11 @@ import "Models.SubModels.Deviation.Flash.idl";
 import "Models.SubModels.Deviation.MotionBook.idl";
 import "Models.SubModels.Deviation.Thumb.idl";
 import "NullableString.idl";
+import "Models.BaseModel.idl";
 
 namespace UwpDeviation.Models
 {
-  [bindable][default_interface] runtimeclass Deviation
+  [bindable][default_interface] runtimeclass Deviation : BaseModel
   {
     Deviation();
     Windows.Foundation.Collections.IVector<UwpDeviation.Models.SubModels.Deviation.Video> Videos;

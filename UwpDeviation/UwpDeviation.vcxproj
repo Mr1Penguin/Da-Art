@@ -120,6 +120,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Models.BaseModel.h">
+      <DependentUpon>Models.BaseModel.idl</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="Models.SubModels.Deviation.Flash.h">
       <DependentUpon>Models.SubModels.Deviation.Flash.idl</DependentUpon>
       <SubType>Code</SubType>
@@ -146,6 +150,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Models.BaseModel.cpp">
+      <DependentUpon>Models.BaseModel.idl</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="Models.SubModels.Deviation.Flash.cpp">
       <DependentUpon>Models.SubModels.Deviation.Flash.idl</DependentUpon>
       <SubType>Code</SubType>
@@ -175,21 +183,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="Models.BaseModel.idl">
+      <SubType>Designer</SubType>
+    </Midl>
     <Midl Include="Class.idl" />
     <Midl Include="Models.SubModels.Deviation.Flash.idl">
-      
     </Midl>
     <Midl Include="Models.Deviation.idl">
-      
     </Midl>
     <Midl Include="Models.SubModels.Deviation.Video.idl">
-      
     </Midl>
     <Midl Include="Models.SubModels.Deviation.MotionBook.idl">
-      
     </Midl>
     <Midl Include="Models.SubModels.Deviation.Thumb.idl">
-      
     </Midl>
   </ItemGroup>
   <ItemGroup>

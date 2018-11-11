@@ -4,18 +4,17 @@
 
 #pragma once
 
+#include "Models.BaseModel.h"
 #include "Models.Deviation.g.h"
 #include "Models.SubModels.Deviation.Flash.g.h"
-#include "Models.SubModels.Deviation.Thumb.g.h"
 #include "Models.SubModels.Deviation.MotionBook.g.h"
+#include "Models.SubModels.Deviation.Thumb.g.h"
 #include "Models.SubModels.Deviation.Video.g.h"
 
 namespace winrt::UwpDeviation::Models::implementation {
   namespace wfc = Windows::Foundation::Collections;
 
-  struct Deviation
-      : DeviationT<Deviation>
-      , ::apicc::BaseModel {
+  struct Deviation : DeviationT<Deviation, implementation::BaseModel> {
     Deviation() = default;
 
     SubModels::Deviation::Flash Flash() const noexcept { return m_flash; }
@@ -42,9 +41,9 @@ namespace winrt::UwpDeviation::Models::implementation {
     apicc::NullableString m_category_path;
     wfc::IVector<SubModels::Deviation::Thumb> m_thumbs;
   };
-} // namespace winrt::UwpDeviantart::Models::implementation
+} // namespace winrt::UwpDeviation::Models::implementation
 
 namespace winrt::UwpDeviation::Models::factory_implementation {
   struct Deviation : DeviationT<Deviation, implementation::Deviation> {
   };
-} // namespace winrt::UwpDeviantart::Models::factory_implementation
+} // namespace winrt::UwpDeviation::Models::factory_implementation

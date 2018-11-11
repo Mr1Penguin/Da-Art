@@ -1,0 +1,14 @@
+import "NullableString.idl";
+
+namespace UwpDeviation.Models
+{
+  [bindable][default_interface] unsealed runtimeclass BaseModel
+  {
+    BaseModel();
+    String Status;
+    apicc.NullableString Error;
+    String ErrorDescription;
+    Int32 ErrorCode();
+    Windows.Foundation.Collections.IMap<String, String> ErrorDetails;
+  }
+} // namespace UwpDeviation.Models

@@ -22,10 +22,20 @@
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Class.cpp" />
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="Models.SubModels.Deviation.Flash.cpp" />
+    <ClCompile Include="Models.Deviation.cpp" />
+    <ClCompile Include="Models.SubModels.Deviation.MotionBook.cpp" />
+    <ClCompile Include="Models.SubModels.Deviation.Video.cpp" />
+    <ClCompile Include="Models.SubModels.Deviation.Thumb.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Class.h" />
+    <ClInclude Include="Models.SubModels.Deviation.Flash.h" />
+    <ClInclude Include="Models.Deviation.h" />
+    <ClInclude Include="Models.SubModels.Deviation.MotionBook.h" />
+    <ClInclude Include="Models.SubModels.Deviation.Video.h" />
+    <ClInclude Include="Models.SubModels.Deviation.Thumb.h" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="Class.idl" />
@@ -43,6 +53,9 @@
     </Midl>
     <Midl Include="Models.SubModels.Deviation.Thumb.idl">
       <Filter>Models\SubModels\Deviation</Filter>
+    </Midl>
+    <Midl Include="Models.BaseModel.idl">
+      <Filter>Models</Filter>
     </Midl>
   </ItemGroup>
   <ItemGroup>
